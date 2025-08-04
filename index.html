@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>infiniteskins</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A raw, minimalist journal of anonymous reflections, emotion, and being.">
-  <meta name="keywords" content="journal, anonymous blog, raw writing, infiniteskins, introspection, healing, solitude">
-  <meta name="author" content="infiniteskins">
-  
-  <!-- Classic newspaper-style font -->
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A raw, minimalist journal of anonymous reflections, emotion, and being." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+  <style>
+    /* Basic Reset & Layout */
+    body {
+      margin: 0;
+      font-family: 'Libre Baskerville', serif;
+      background: #fff;
+      color: #222;
+    }
+    .container {
+      max-width: 700px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Top navigation bar */
+    nav {
+      background: #f0f0f0;
+      padding: 1rem 0;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-weight: 600;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover, nav a.active {
+      color: #8b0000; /* dark red accent */
+      border-bottom: 2px solid #8b0000;
+    }
+
+    /* Post list */
+    .post-list article {
+      margin-bottom: 2rem;
+    }
+    .post-list h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+    .post-list p.date {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
-
 <body>
-
   <div class="container">
-     <!-- Sidebar Navigation -->
-    <aside class="sidebar">
-      <h1>infiniteskins</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="archive.html">Archive</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <!-- Navigation Top Bar -->
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="archive.html">Archive</a>
+      <a href="about.html">About</a>
+    </nav>
 
-    <!-- Main Content Area -->
-    <main class="content">
-      <section class="post-list">
+    <section class="post-list">
+      <article class="post">
+        <h2><a href="my-first-post.html">Attention</a></h2>
+        <p class="date">August 4, 2025</p>
+        <p>... I am done being watched. I am living now. I don't care...</p>
+      </article>
 
-        <!-- 📌 Add each new post here as a separate entry -->
-        <article class="post">
-          <h2><a href="my-first-post.html">Attention</a></h2>
-          <p class="date">August 4, 2025</p>
-          <p>...I am done being watched. I am living now. I don’t care. </p>
-        </article>
-
-       
-
-      </section>
-    </main>
+      <!-- More posts here -->
+    </section>
   </div>
-
 </body>
 </html>
