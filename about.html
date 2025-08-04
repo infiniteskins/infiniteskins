@@ -1,22 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About - infiniteskins</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>About - infiniteskins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About infiniteskins – a raw, minimalist journal." />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Libre Baskerville', serif;
+      background: #fff;
+      color: #222;
+    }
+    .container {
+      max-width: 700px;
+      margin: 1rem auto;
+      padding: 0 1rem;
+    }
+    nav {
+      background: #f0f0f0;
+      padding: 1rem 0;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-weight: 600;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover, nav a.active {
+      color: #8b0000;
+      border-bottom: 2px solid #8b0000;
+    }
+    h1 {
+      margin-top: 2rem;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h1>infiniteskins</h1>
-        <nav>
-            <a href="index.html">home</a>
-            <a href="about.html">about</a>
-            <a href="archive.html">archive</a>
-        </nav>
-    </div>
-    <div class="content">
-        <h2>About</h2>
-        <p>This blog is an anonymous journal. A place for raw thoughts, unfiltered conversations, and quiet moments.</p>
-    </div>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="archive.html">Archive</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+
+    <h1>About infiniteskins</h1>
+    <p>Welcome to infiniteskins, a space for raw, unfiltered thoughts and reflections. Here, I explore the journey of finding myself within my own skin — a quiet search for authenticity, vulnerability, and healing.</p>
+
+    <p>This journal is anonymous, minimalist, and intentionally imperfect. It’s for anyone who’s ever felt alone in their experience, hoping to find “yeah, that’s me” moments in the shared human story.</p>
+
+    <p>Thank you for stopping by. Feel free to explore, reflect, and return anytime.</p>
+    <p>I had originally written a single line about this blog section. A very popular friend, who helps me code this site, suggested changes to make it more human. Oh, the fucking irony. Hahahaha. I like it.</p>
+  </div>
 </body>
 </html>
