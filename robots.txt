@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://infiniteskins.github.io/infiniteskins/sitemap.xml
